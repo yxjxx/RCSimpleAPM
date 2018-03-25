@@ -1,0 +1,19 @@
+PODS:
+  - PerformanceChart (0.1.0)
+  - RCSimpleAPM (0.1.0):
+    - PerformanceChart
+
+DEPENDENCIES:
+  - RCSimpleAPM (from `../`)
+
+EXTERNAL SOURCES:
+  RCSimpleAPM:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PerformanceChart: 5094ed3e5d4e101adf3558dcdbcad61043b76aa4
+  RCSimpleAPM: 3e1ab3ab8bb80f561180a0ffbe9b931a952bdc31
+
+PODFILE CHECKSUM: f48b424760816bfefa3ef617d16c509a471050b0
+
+COCOAPODS: 1.4.0

@@ -20,6 +20,14 @@ it, simply add the following line to your Podfile:
 pod 'RCSimpleAPM'
 ```
 
+## Usage
+
+```objc
+[[RCPerformanceRecorder sharedRecorder] monitorImageLibPerformanceWithEngineName:@"BDWebImage" andDuration:20 callback:^(UIViewController *resultVC) {
+    [navigationController pushViewController:resultVC animated:YES];
+}];
+```
+
 ## Author
 
 yxjxx, yangjing.rico@bytedance.com

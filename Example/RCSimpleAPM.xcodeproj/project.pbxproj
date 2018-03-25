@@ -337,10 +337,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RCSimpleAPM_Example/Pods-RCSimpleAPM_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PerformanceChart/PerformanceChart.framework",
 				"${BUILT_PRODUCTS_DIR}/RCSimpleAPM/RCSimpleAPM.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PerformanceChart.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCSimpleAPM.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

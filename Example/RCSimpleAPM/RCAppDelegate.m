@@ -7,12 +7,25 @@
 //
 
 #import "RCAppDelegate.h"
+#import "RCViewController.h"
+#import "RCPerformanceRecorder.h"
 
 @implementation RCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIViewController *viewcontroller = [RCViewController new];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewcontroller];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    // Override point for customization after application launch.
+    
+    [[RCPerformanceRecorder sharedRecorder] monitorImageLibPerformanceWithEngineName:@"BDWebImage" andDuration:20 callback:^(UIViewController *resultVC) {
+        [navigationController pushViewController:resultVC animated:YES];
+    }];
+    
     return YES;
 }
 
