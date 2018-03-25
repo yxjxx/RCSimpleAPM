@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RCSimpleAPM_Example' do
+  pod 'RCSimpleAPM', :path => '../'
+
+  target 'RCSimpleAPM_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
